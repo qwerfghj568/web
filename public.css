@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav {
+    height: 50px;
+    line-height: 50px;
+    background: url(image/11.jpg) center top;
+}
+
+.warp {
+    width: 1200px;
+    margin: auto;
+}
+
+.nar {
+    width: 1400px;
+    margin: auto;
+}
+
+.nav li {
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+
+.nar.ac {
+    width: 100px;
+    height: 50px;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+}
+
+.nav span {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.nav li:hover>a {
+    color: rgb(19, 128, 244);
+}
+
+.footer {
+    height: 150px;
+    font-size: 20px;
+    background-color: rgb(43, 41, 41);
+    border-top: 2px solid rgba(24, 193, 239, 0.962);
+}
+
+.footer p {
+    color: aliceblue;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gamelogo {
+    width: 119px;
+    height: 42px;
+    padding-top: 20px;
+    position: relative;
+    left: 40%;
+}
+
+.game {
+    width: 110px;
+    height: 81px;
+    right: 40%;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.main {
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+
+.image1 {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    width: 100px;
+}
+
+.image1- img {
+    width: 100%;
+}
+
+.audio {
+    position: fixed;
+    z-index: 9;
+    top: 18px;
+    left: 70px;
+}
+
+#audio {
+    display: none;
+}
+
+.audio .audios {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.audioNo {
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.audioNo {
+    display: block;
+}
+
+#audio:checked~.audioNo {
+    display: none;
+}
+
+.audio embed {
+    display: none;
+}
+
+#audio:checked~embed {
+    display: block;
+    opacity: 0;
+}
+
+#audio:checked~.audioYes {
+    display: block;
+}
+
+.mainbody {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.uiop{
+    width: 100%;
+    height: 100vh;
+}
+
+.img {
+    position: absolute;
+    opacity: 0.9;
+    z-index: 1;
+    top: 20px;
+    left: 15px;
+}
+
+.img1 {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 15px
+}
+
+.video_body_nr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.video_button {
+    margin-bottom: 20px;
+    width: 356px;
+    height: 76px;
+    background: url("./image/video背景.png") no-repeat center;
+}
+
+.conductButton {
+    display: block;
+    position: relative;
+    margin: 14px auto 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.conductButton:hover {
+    background-color: transparent;
+}
+
+.buttonStart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    background: url("./image/videoButton.png") no-repeat center top;
+    transform: translate(-50%, -50%);
+}
+
+.conductButton:hover .buttonStart {
+    background-position: center bottom;
+}
+
+.videos {
+    display: none;
+    width: 896px;
+    height: 504px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+}
+
+.offbutton {
+    position: absolute;
+    background: url("./image/宣传视频关闭.png");
+    opacity: 0.65;
+    cursor: pointer;
+    z-index: 111;
+}
+
+.offbutton:hover {
+    opacity: 1;
+}
+
+#conductVideo:checked~.videos {
+    display: block;
+}
+
+#conductVideo:checked~.shade {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* 世界的页面*/
+.shade {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mende1 {
+    height: 1000px;
+    position: relative;
+    background: url(./image/10008.png);
+    background-size: cover;
+}
+
+.img001 {
+    width: 371px;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: o.9;
+}
+
+.img002 {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 400px;
+    right: 0;
+    margin: auto;
+}
+
+.mende1>p {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 60%;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.mende {
+    background: url(./image/10011.jpg);
+    position: relative;
+    height: 1000px;
+    background-size: cover;
+}
+
+.img003 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mende>h1 {
+    color: rgb(255, 243, 243);
+    font-size: 40px;
+    position: relative;
+    top: 40%;
+    left: 48%;
+}
+
+.mende>p {
+    color: rgb(255, 243, 243);
+    font-size: 20px;
+    position: relative;
+    top: 60%;
+    margin-left: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.liyue {
+    height: 1000px;
+    position: relative;
+    background: url(./image/10012.jpg);background-size: cover;
+}
+
+.img004 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.liyue>h1 {
+    color: rgb(255, 243, 243);
+    font-size: 40px;
+    position: relative;
+    top: 40%;
+    left: 48%;
+}
+
+.liyue>p {
+    color: rgb(255, 243, 243);
+    font-size: 20px;
+    position: relative;
+    top: 60%;
+    margin-left: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.daoqi {
+    height: 1000px;
+    position: relative;
+    background: url(./image/10013.jpg);background-size: cover;
+}
+
+.daoqi>h1 {
+    color: rgb(255, 243, 243);
+    font-size: 40px;
+    position: relative;
+    top: 40%;
+    left: 48%;
+}
+
+.daoqi>p {
+    color: rgb(255, 243, 243);
+    font-size: 20px;
+    position: relative;
+    top: 60%;
+    margin-left: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img005 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.xumi {
+    height: 1000px;
+    position: relative;
+    background: url(./image/10014.jpg);background-size: cover;
+}
+
+.img006 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.xumi>p {
+    color: rgb(255, 243, 243);
+    font-size: 20px;
+    position: relative;
+    top: 60%;
+    margin-left: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.xumi>h1 {
+    color: rgb(255, 243, 243);
+    font-size: 40px;
+    position: relative;
+    top: 40%;
+    left: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 角色页面 */
+
+.shell{
+    width: 100%;
+    height: 100%;
+display: flex;
+    height: 100vh;
+    background-color: slateblue;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    background-color: #fff;
+    height: 80%;
+    margin: 0 10px;
+    border: 10px rgb(255, 255, 255);
+box-shadow: 10px 10px 20px #fff;
+border-radius: 10px;
+transition: all 0.5s;
+width: auto;
+width: 10%;
+}
+.box>img{
+    width: 90%;
+    transition: all 0.5s;
+    object-fit: cover;
+    height: 90%;
+}
+.box span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 武器页面 */
+.wuqibody {
+    top: 10px;
+  width: 100%;
+    height: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./image/100002530.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 任意高度 */
+    overflow: hidden;
+  }
+  
+  .carousel-slider {
+    position: relative;
+    width: calc(100% * (图片数量 + 1)); /* 需要足够宽来容纳所有图片 */
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item:not(.active) {
+    opacity: 0; /* 可选，用于淡入淡出效果 */
+  }
+  
+  /* 导航按钮的位置布局 */
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   height: 5%;
+  }
+  .carousel-prev { left: 10px; }
+  .carousel-prev:active{
+    background-color: aquamarine;
+  }
+  .carousel-next { right: 10px; }
+  .carousel-next:active{
+    background-color: aquamarine;
+  }
+.rightt,
+.lefttt{
+    width: 48px;
+    height: 54px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+/* boss页面 */
+.bossbody {
+    top: 10px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgb(32, 28, 28);
+   
+}
+
+.mask1 {
+    position: relative;
+  width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+.hide1 {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    transition: bottom 0.3s;
+}
+
+.hide1>h1 {
+    color: red;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 10px;
+    width: auto;
+}
+
+.hide1>p {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 25px;
+    padding-top: 10px;
+    width: auto;
+    text-align: center;
+}
+
+.ziti {
+    color: #fff;
+    opacity: 0.5;
+    width: auto;
+}
+
+.mask1:hover .hide1 {
+    bottom: 0;
+}
+
+.mask1:hover .imgg1234 {
+    transform: scale(1.2);
+}
+.imgg1234{
+    background-size: cover;
+  
+}
+.BOSS{
+    width: 100%;
+}
+
+
+
+
+/* 圣遗物页面 */
+.shiwubody {
+    top: 10px;
+    margin: 0 auto;
+    background-color: rgb(0, 111, 255, 0.6);
+}
+
+.shengyi {
+    width: 1200px;
+    height: 430px;
+    background: linear-gradient(goldenrod, gold);
+    text-align: center;
+    margin: auto;
+}
+
+.shengyi>h3 {
+    color: white;
+    opacity: 0.8;
+}
+
+.shengyi>p {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.letuan {
+    float: left;
+    width: 340px;
+    height: 390px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.bijing33 {
+    height: 100vh;
+    background-image: url(./image/z99.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.zhanghao {
+    width: 600px;
+    height: 600px;
+    color: black;
+    opacity: 0.85;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 25px;
+    box-shadow: 10px 10px 10px 10px rgb(222, 190, 13, 0.3);
+}
+
+.shezhi1 {
+    padding-top: 200px;
+    border-radius: 15px;
+    width: 30px;
+    height: 20px;
+}
+
+.zhanghao33 {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.zhanghao3 {
+    padding: 12px 20px;
+    font-size: 25px;
+}
+
+.ao11 {
+    position: absolute;
+    z-index: 1;
+}
+
+.yan11 {
+    opacity: 0.4;
+}
